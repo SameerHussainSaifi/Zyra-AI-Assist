@@ -1,9 +1,9 @@
 import React from 'react'
-import ZyraAI from '/src/Components/ZyraAI.jsx';
+import ZyraAIAssist from '/src/Components/ZyraAIAssist.jsx';
 function App() {
   return (
     <div className=''>
-     <ZyraAI/>
+     <ZyraAIAssist/>
     </div>
   )
 }
