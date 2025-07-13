@@ -1,9 +1,11 @@
 import React from "react";
+import {useState} from 'react';
 import Header from "./Header/Header.jsx";
 import User from "/src/Components/User/User.jsx";
 import History from "/src/Components/History/History.jsx";
 import Display from "./Display/Display.jsx";
 function ZyraAIAssist() {
+  const[prop,setProp]=useState('prop');
   return (
     <>
       <div className="flex flex-col space-y-2 w-11/12 mx-auto">
