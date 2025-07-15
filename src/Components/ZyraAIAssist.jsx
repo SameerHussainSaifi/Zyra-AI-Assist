@@ -9,13 +9,14 @@ const userContext=createContext();
 function ZyraAIAssist() {
   const[prop,setProp]=useState('prop');
   const [theme,setTheme]=useState('bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-700');
+  const [bgTheme,setbgTheme]=useState('bg-white');
   
   return (
     
     <>
-    <userContext.Provider value={{theme,setTheme}} >
+    <userContext.Provider value={{theme,setTheme,bgTheme,setbgTheme}} >
       <div className="flex flex-col space-y-2 w-11/12 mx-auto">
-        <div className="mt-5">
+        <div className="mt-10">
                <Header />
         </div>
         <div className="flex justify-around  m-5  ">
@@ -27,7 +28,7 @@ function ZyraAIAssist() {
             <History />
           </div>
 
-          <div className="w-8/12 h-screen">
+          <div className="w-8/12 h-screen mx-auto">
             <Display />
           </div>
         </div>

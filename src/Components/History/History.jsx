@@ -9,7 +9,7 @@ function History() {
         <div className=''>
          
         </div>
-      </div>
+    </div>
     </>
   );
 }

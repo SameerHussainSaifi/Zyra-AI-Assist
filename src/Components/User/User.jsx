@@ -5,11 +5,11 @@ import { useContext } from "react";
 import { userContext } from "../ZyraAIAssist";
 
 function User() {
-  let color=useContext(userContext);
+  let {bgTheme,setbgTheme}=useContext(userContext);
   
   return (
     <>
-    <div className='flex flex-col items-center space-y-5 pt-10'>
+    <div className={`flex flex-col items-center space-y-5 pt-10 ${bgTheme} h-screen`}>
       <div>
         <Theme />
       </div>
@@ -17,7 +17,7 @@ function User() {
         <Setting />
       </div>
      
-      </div>
+     </div>
     </>
   );
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import ZyraAIAssist from '/src/Components/ZyraAIAssist.jsx';
 function App() {
   return (
-    <div className=''>
+    <div className='flex justify-center md:w-full mx-auto'>
      <ZyraAIAssist/>
     </div>
   )

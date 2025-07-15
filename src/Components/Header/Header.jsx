@@ -1,4 +1,6 @@
 import React from 'react'
+import headTheme from '/src/assets/logo.png'
+
 import { SiChatbot } from "react-icons/si";
 import { useContext } from 'react';
 import { userContext } from '../ZyraAIAssist';
@@ -9,7 +11,7 @@ function Header() {
   <>
   <div className='flex w-full h-20 shadow-[0_0_20px_rgba(0,0,0,0.3)] items-center  rounded-xl'>
       <div className='flex space-x-2 items-center'>
-        <div className={`flex  pl-10 ${theme}`}><SiChatbot size={30} className=''/></div>
+        <div className='sm:pl-5 md:pl-10'><img src={headTheme} alt="" className='  sm:w-20 ${theme}'/></div>
           <div className={`${theme} font-semibold text-xl`}>Zyra AI Assistant</div>
       </div>
 
