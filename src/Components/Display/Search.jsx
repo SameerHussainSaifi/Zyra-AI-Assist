@@ -36,7 +36,7 @@ function Search({query,setQuery,result,setResult}) {
  
   return (
      
-    <div className='flex items-center justify-between sm:w-7/12  h-10 rounded-2xl  border-2 border-pink-500'>
+    <div className='flex items-center justify-between  sm:w-7/12   h-10 rounded-2xl  border-2 border-pink-500'>
       
       <div className="w-full">
         <input type="text" placeholder='Ask anything '  className='outline-none text-center text-purple-700 w-full' onChange={(event)=>setQuery(event.target.value)}/>

@@ -14,12 +14,13 @@ function ZyraAIAssist() {
   return (
     
     <>
+     <div className=" relative mx-auto flex flex-col space-y-2 w-full sm:w-11/12 md:w-10/12 lg:w-9/12 xl:w-8/12">
     <userContext.Provider value={{theme,setTheme,bgTheme,setbgTheme}} >
-      <div className="flex flex-col space-y-2 w-11/12 mx-auto">
+     
         <div className="mt-10">
                <Header />
         </div>
-        <div className="flex justify-around  m-5  ">
+        <div className="flex justify-around  mt-5  ">
           <div className="w-1/12 h-screen  rounded-tl-xl rounded-bl-xl shadow-[-10px_0_20px_-5px_rgba(0,0,0,0.3)]">
           
             <User />
@@ -32,9 +33,9 @@ function ZyraAIAssist() {
             <Display />
           </div>
         </div>
-      </div>
+     
         </userContext.Provider>
-   
+    </div>
    </>
   );
 }

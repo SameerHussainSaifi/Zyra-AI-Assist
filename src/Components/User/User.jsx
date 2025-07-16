@@ -9,7 +9,7 @@ function User() {
   
   return (
     <>
-    <div className={`flex flex-col items-center space-y-5 pt-10 ${bgTheme} h-screen`}>
+    <div className={`flex flex-col items-center space-y-5 pt-10 rounded-tl-xl rounded-bl-xl ${bgTheme} h-screen`}>
       <div>
         <Theme />
       </div>
