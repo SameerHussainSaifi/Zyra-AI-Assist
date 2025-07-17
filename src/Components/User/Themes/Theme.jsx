@@ -34,7 +34,7 @@ function Theme() {
   }
   function setOrange(){
     setTheme('text-orange-400');
-    setbgTheme('bg-orange-200');
+    setbgTheme('bg-amber-300');
   }
   const [dropdown,setDropdown]=useState(false);
   function themeSet(){
@@ -46,8 +46,8 @@ function Theme() {
   return (
     <>
     
-    <div className={`text-purple-500 `}>
-      <button onClick={themeSet} className={` w-18 `}><img src={themechange} alt="" /> </button>
+    <div className={`text-purple-500  `}>
+      <button onClick={themeSet} className={` w-16 `}><img src={themechange} alt="" /> </button>
     </div>
     {dropdown?
     <div className='flex flex-col space-y-2 items-center mb-5'>
@@ -55,7 +55,7 @@ function Theme() {
       <div className='bg-green-500 h-5 w-5 rounded-full' onClick={setGreen}></div>
     <div className='bg-blue-500 h-5 w-5 rounded-full'onClick={setBlue}></div>
     <div className='bg-purple-500 h-5 w-5 rounded-full' onClick={setPurple}></div>
-    <div className='bg-orange-500 h-5 w-5 rounded-full' onClick={setOrange}></div>
+    <div className='bg-amber-500 h-5 w-5 rounded-full' onClick={setOrange}></div>
     <div className='bg-white h-5 w-5 rounded-full border-1' onClick={setWhite}></div>
     <div className='bg-black h-5 w-5 rounded-full' onClick={setBlack} ></div>
     </div>

@@ -1,13 +1,10 @@
 @import "tailwindcss";
 
-.mask-chatbot {
-  -webkit-mask-image: url('/icons/chatbot.svg');
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  -webkit-mask-size: cover;
+html,body, #root{
+  height:100;
+  width:100%;
 
-  mask-image: url('/icons/chatbot.svg');
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: cover;
+  overflow-x:hidden;
+ padding:10px;
+
 }

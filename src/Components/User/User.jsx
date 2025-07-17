@@ -10,7 +10,7 @@ function User() {
   return (
     <>
     <div className={`flex flex-col items-center space-y-5 pt-10 rounded-tl-xl rounded-bl-xl ${bgTheme} h-screen`}>
-      <div>
+      <div className='pl-10 pr-10'>
         <Theme />
       </div>
       <div className="">
