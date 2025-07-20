@@ -12,30 +12,32 @@ function Display() {
   return (
     <>
       <div
-        className={` flex flex-col space-y-30 overflow-y-auto h-screen w-full mb-5 shadow-[10px_0_20px_-5px_rgba(0,0,0,0.3)] rounded-tr-xl rounded-br-xl ${bgTheme} `}
+        className={` space-y-30 w-full h-screen shadow-[10px_0_20px_-5px_rgba(0,0,0,0.3)] rounded-tr-xl rounded-br-xl ${bgTheme} h-screen w-full flex flex-col items-center justify-center`}
       >
-        hello
-        <div>
-          {/* <div className="relative top-70 left-110 max-w-xs bg-blue-500 text-white rounded-xl p-2 my-2 shadow-md w-fit">
-            {query}
-          </div> */}
-          <div className="relative space-y-10   ">
-            {result.map((item, index) => (
-  <div key={index} className="mb-4">
-    <div className="relative  left-110 max-w-xs bg-blue-500 text-white rounded-xl p-2 my-2 shadow-md w-fit">Q: {item.question}</div>
-    <div className="relative  left-10 max-w-xs bg-green-500 text-white rounded-xl p-2 my-2 shadow-md w-fit">A: {item.answer}</div>
-  </div>
-))}
+        <div
+          className={`w-full  overflow-y-auto  mb-10  `}
+        >
+          {result.map((item, index) => (
+            <div key={index} className=" mt-10 flex justify-evenly space-x-10 w-full ">
+              <div className="pt-5  max-w-sm bg-gray-600 text-white rounded-tr-xl rounded-br-xl rounded-bl-2xl pl-4 pr-2 py-1   shadow-md w-fit">
+                {item.answer}
+              </div>
+
+              <div className=" relative pt-5 max-w-sm  bg-green-600 text-white rounded-tl-xl rounded-bl-xl rounded-br-2xl pl-2 pr-4 py-1  shadow-md w-fit h-fit bottom-14 mt-10">
+                {item.question}
+              </div>
+            </div>
+          ))}
+           </div>
+          <div className="flex w-full justify-center relative mb-25  mt-20">
+            <Search
+              query={query}
+              setQuery={setQuery}
+              result={result}
+              setResult={setResult}
+            />
           </div>
-        </div>
-        <div className="flex w-full justify-center relative   mb-5">
-          <Search
-            query={query}
-            setQuery={setQuery}
-            result={result}
-            setResult={setResult}
-          />
-        </div>
+        
       </div>
     </>
   );

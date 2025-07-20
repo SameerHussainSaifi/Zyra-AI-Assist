@@ -41,8 +41,9 @@ function Search({ query, setQuery, result, setResult }) {
         <input
           type="text"
           placeholder="Ask anything "
-          className="outline-none text-center text-purple-700 w-full"
+          className="outline-none text-center text-purple-700 w-full "
           onChange={(event) => setQuery(event.target.value)}
+         
         />
       </div>
       <div className="mr-5 text-purple-700">
